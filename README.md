@@ -5,11 +5,16 @@ Programa de linha de comando (CLI) que calcula o imposto a ser pago sobre lucros
 ## Decisões técnicas e arquiteturais
 
 Escolhido o Python como linguagem de programação, pela simplicidade de desenvolvimento, fácil entendimento e a diversidade de recursos nativos, evitando o uso de muitas dependências externas.
+
 Na estrutura do projeto aplicado Clean Architecture com o objetivo de padronizar e organizar o código tornando reutilizável.
+
 O desenvolvimento do código foi mantido o conceitos de clean code para facilitar a manutenção:
-    - Separação das responsabilidades.
-    - Type hints: usado para adicionar tipos a variáveis, parâmetros, argumentos de função, bem como seus valores de retorno, atributos de classe e métodos.
-    - Docstring: usado para adicionar strings literais que aparecem na definição de uma função, método, classe ou módulo.
+
+- Separação das responsabilidades.
+- Type hints: usado para adicionar tipos a variáveis, parâmetros, argumentos de função, bem como seus valores de retorno, atributos de classe e métodos.
+- Docstring: usado para adicionar strings literais que aparecem na definição de uma função, método, classe ou módulo.
+
+Se fez necessário o uso da biblioteca [pydantic]("https://docs.pydantic.dev/) para validação de dados de entrada como tipagem e estrutura padrão, fornecendo um tratamento de erro com retorno amigável, mantendo a estabilidade de execução do programa.
 
 ## Executar o aplicativo
 
