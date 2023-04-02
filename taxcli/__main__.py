@@ -1,7 +1,7 @@
 import sys
 import json
-from .schemas import Input
-from .stock_market import StockMarket
+from .schemas.stock_market import Input
+from .usecases.stock_market import StockMarket
 from json.decoder import JSONDecodeError
 from pydantic.error_wrappers import ValidationError
 

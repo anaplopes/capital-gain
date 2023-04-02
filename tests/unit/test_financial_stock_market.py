@@ -1,6 +1,6 @@
 import unittest
-from taxcli.schemas import Input
-from taxcli.stock_market import StockMarket
+from taxcli.schemas.stock_market import Input
+from taxcli.usecases.stock_market import StockMarket
 
 
 class TestsFinancialStockMarket(unittest.TestCase):

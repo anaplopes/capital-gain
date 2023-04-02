@@ -1,5 +1,5 @@
 from typing import List, Tuple
-from .schemas import Input
+from ..schemas.stock_market import Input
 
 
 class StockMarket:
