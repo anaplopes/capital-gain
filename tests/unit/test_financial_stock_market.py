@@ -4,13 +4,11 @@ from taxcli.usecases.stock_market import StockMarket
 
 
 class TestsFinancialStockMarket(unittest.TestCase):
-    def __init__(self, methodName: str = "runTest") -> None:
-        super().__init__(methodName)
+
+    def setUp(self):
         self.fsm = StockMarket()
-        self.buy = Input(
-            **{"operation": "buy", "unit_cost": 10.00, "quantity": 10000})
-        self.sell = Input(
-            **{"operation": "sell", "unit_cost": 20.00, "quantity": 5000})
+        self.buy = Input(operation="buy", unit_cost=10.00, quantity=10000)
+        self.sell = Input(operation="sell", unit_cost=20.00, quantity=5000)
 
     def test_calculate_weighted_average(self):
         _func = self.fsm.calculate_weighted_average(
