@@ -1,8 +1,8 @@
 import sys
 import json
-from .schemas.stock_market import Input
-from .usecases.stock_market import StockMarket
 from json.decoder import JSONDecodeError
+from taxcli.schemas.stock_market import Input
+from taxcli.usecases.stock_market import StockMarket
 from pydantic.error_wrappers import ValidationError
 
 

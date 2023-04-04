@@ -1,5 +1,5 @@
 from typing import List, Tuple
-from ..schemas.stock_market import Input
+from taxcli.schemas.stock_market import Input
 
 
 class StockMarket:

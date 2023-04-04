@@ -61,3 +61,9 @@ Se fez necessário o uso da biblioteca [pydantic]("https://docs.pydantic.dev/) p
     ```bash
         python3 -m unittest discover -s tests/unit -v
     ```
+
+- Unitário
+
+    ```bash
+        python3 -m unittest discover -s tests/integration -v
+    ```
